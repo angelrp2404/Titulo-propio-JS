@@ -42,11 +42,27 @@ do{
 }while(acierto!=true) */
 
 // for
-let coleccionPalabras= ["uno","dos","tres","cuatro","cinco","pollo",1,3,4,5,true,false]
+let coleccionPalabras= ["uno","dos","tres","cuatro","cinco","pollo"]
 /* for (let index = 0; index < coleccionPalabras.length; index++) {
    
     console.log(coleccionPalabras[index]);
     console.log( typeof coleccionPalabras[index]);
     
 } */
-coleccionPalabras.forEach(e=>console.log(e))
+//coleccionPalabras.forEach((element) =>console.log(element))
+
+
+for (const iterator of coleccionPalabras) {
+    console.log(iterator);
+}
+
+for (const key in coleccionPalabras) {
+    if (Object.hasOwnProperty.call(coleccionPalabras, key)) {
+        const element = coleccionPalabras[key];
+        console.log(element);
+        
+    }
+}
+
+
+
