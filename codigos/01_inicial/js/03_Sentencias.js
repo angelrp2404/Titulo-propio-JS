@@ -49,4 +49,4 @@ let coleccionPalabras= ["uno","dos","tres","cuatro","cinco","pollo",1,3,4,5,true
     console.log( typeof coleccionPalabras[index]);
     
 } */
-
+coleccionPalabras.forEach(e=>console.log(e))
